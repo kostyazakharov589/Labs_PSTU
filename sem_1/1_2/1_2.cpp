@@ -1,14 +1,13 @@
 #include <iostream>
-using namespace std;
 
 int main() {
 	float a, b;
-	cin >> a >> b;
+	std::cin >> a >> b;
 	if (b == 0){
-	    cout<<"не делить на 0"<<endl;
+	    std::cout<<"не делить на 0"<<endl;
 	}
 	else{
-	    cout<<a/b<<endl;
+	    std::cout<<a/b<<endl;
 	}
 return 0;
 }
