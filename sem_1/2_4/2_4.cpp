@@ -20,7 +20,7 @@ int main(){
         std::cout << std::endl;
         }
     }
-    if( n <= 3, n%2 == 0){
+    else{
         std::cout << "больше 3 или нечётное число" << std::endl;
     }
 }
