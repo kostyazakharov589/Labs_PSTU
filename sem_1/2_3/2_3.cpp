@@ -1,18 +1,17 @@
-#include <iostream>
-
-int main() {
-    int n, s = 0;
+#include <iostream> 
+int main(){
+    int n;
+    int a, b = 0;
     std::cin >> n;
-    if (n > 0){
-        for (int i = 1;i<=n;i++){
-            s = i*(i+1);
+    for (int i = 1; i <= n; i++)
+        {
+            a = 1;
+            for (int j = i; j <= 2*i; j++)
+            {
+                a *= j;
+            }
+        b += a;
         }
-        std::cout<<s<<std::endl;
-    }
-    else{
-        std::cout<<"ввести больше 0"<<std::endl;
-    }
-    
-return 0;
+    std::cout << a << std::endl;
 }
 
