@@ -13,4 +13,7 @@ int main(){
         std::cout << std::endl;
         }
     }
+    else{
+        std::cout << "больше 2" << std::endl;
+    }
 }
