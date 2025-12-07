@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 int main() {
 	float a, b;
 	std::cin >> a >> b;
