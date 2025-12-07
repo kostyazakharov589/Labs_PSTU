@@ -17,5 +17,6 @@ int main() {
 	else{
 	    std::cout<< "больше 2" << std::endl;
 	}
+	return 0;
 }
 
