@@ -1,5 +1,6 @@
 #include <iostream> 
 #include <cmath>
+using namespace std;
 int main(){
 
 float a, b, c, d, x1, x2;
@@ -17,5 +18,6 @@ else if (d == 0)
  cout << "x1=x2=" << x1 << endl;
 }
 else { cout << "Корней нет" << endl; }
+
 return 0;
 }
