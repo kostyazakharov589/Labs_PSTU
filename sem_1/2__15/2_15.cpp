@@ -1,4 +1,5 @@
 #include <iostream> 
+using namespace std;
 int main(){
 int n, s, k;
 bool flag = false;
@@ -14,5 +15,6 @@ while (n > 0 && !flag)
  else { n /= 10; }
 }
 if (!flag) { cout << "Цифра не найдена" << endl; }
+
 return 0;
 }
