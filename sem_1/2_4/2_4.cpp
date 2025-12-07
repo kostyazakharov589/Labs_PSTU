@@ -23,4 +23,5 @@ int main(){
     else{
         std::cout << "больше 3 или нечётное число" << std::endl;
     }
+    return 0;
 }
