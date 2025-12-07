@@ -1,4 +1,5 @@
 #include <iostream> 
+using namespace std;
 int main(){
 int n, tmp, max, min;
 cout << "Введите длину последовательности:" << endl;
@@ -16,5 +17,6 @@ for (int i = 2; i <= n; i++)
 }
 cout << "Сумма максимального и минимального элементов: " << (max+min) <<
 endl;
+
 return 0;
 }
