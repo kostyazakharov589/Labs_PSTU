@@ -1,4 +1,5 @@
 #include <iostream> 
+using namespace std;
 int main(){
 int n, tmp;
 bool plus1 = false; 
@@ -17,6 +18,7 @@ for (int i = 1; i <= n; i++)
 if (plus1) { cout << "Сначала ввели положительное число"; }
 else if (minus1) { cout << "Сначала ввели отрицательное число"; }
 else { cout << "Все элементы были нулевыми"; }
+
 cout << endl;
 return 0;
 }
