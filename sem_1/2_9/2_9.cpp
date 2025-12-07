@@ -3,7 +3,7 @@ int main(){
 int n, d;
 cin >> n;
 d = n/2;
-// Заднняя грань
+
 for (int i = 0; i < d; i++)
 {
  cout << " ";
@@ -13,7 +13,7 @@ for (int i = 0; i < n; i++)
  cout << "* ";
 }
 cout << endl;
-// Верхние диагонали
+
 for (int i = 0; i < d-1; i++)
 {
  for (int j = 1; j < d-i; j++)
@@ -32,7 +32,7 @@ for (int i = 0; i < d-1; i++)
  }
  cout << "*" << endl;
 }
-// Передняя верхняя грань + кусочек задней грани
+
 for (int i = 0; i < n; i++)
 {
  cout << "* ";
@@ -42,7 +42,7 @@ for (int i = 0; i < d-2; i++)
  cout << " ";
 }
 cout << "*" << endl;
-// Боковые грани (без диагоналей, прямые)
+
 for (int i = 0; i < n-d-1; i++)
 {
  cout << "* ";
@@ -57,7 +57,7 @@ for (int i = 0; i < n-d-1; i++)
  }
  cout << "*" << endl;
 }
-// Нижние диагонали
+
 for (int i = 0; i < d-1; i++)
 {
  cout << "* ";
@@ -72,7 +72,7 @@ for (int i = 0; i < d-1; i++)
  }
  cout << "*" << endl;
 }
-// Нижняя грань
+
 for (int i = 0; i < n; i++)
 {
  cout << "* ";
