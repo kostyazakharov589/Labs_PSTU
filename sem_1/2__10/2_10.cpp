@@ -1,4 +1,5 @@
 #include <iostream> 
+using namespace std;
 int main(){
 int n, tmp, max;
 cout << "длина последовательности:" << endl;
@@ -12,5 +13,6 @@ for (int i = 2; i <= n; i++)
  if (tmp > max) { max = tmp; }
 }
 cout << "Макс. эл.: " << max << endl;
+
 return 0;
 }
