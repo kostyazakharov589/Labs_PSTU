@@ -13,5 +13,5 @@ int main() {
 	    s = c;
 	}
 	
-std::cout<<s<<endl;
+std::cout<<s<<std::endl;
 }
