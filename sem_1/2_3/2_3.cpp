@@ -14,6 +14,6 @@ int main() {
     sum += tmp;
 }
     std::cout << sum << std::endl;
-
+return 0;
 }
 
