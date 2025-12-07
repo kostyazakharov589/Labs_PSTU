@@ -10,10 +10,13 @@ for (int i = 2; i <= n; i++)
 {
  std::cout << "Следующее число:" << std::endl;
  std::cin >> tmp;
- if (tmp > max) { max = tmp; }
+ if (tmp > max) { 
+  max = tmp; 
+ }
 }
 std::cout << "Макс. эл.: " << max << std:;endl;
 
 return 0;
 }
+
 
