@@ -5,7 +5,7 @@ int main(){
 
 float a, b, c, d, x1, x2;
 std::cin >> a >> b >> c;
-d = pow(b, 2) - 4*a*c; // b*b - 4*a*c
+d = pow(b, 2) - 4*a*c; 
 if (d > 0)
 {
  x1 = (-b + sqrt(d)) / (2*a);
@@ -21,4 +21,5 @@ else { std::cout << "Корней нет" << std::endl; }
 
 return 0;
 }
+
 
