@@ -2,14 +2,15 @@
 using namespace std;
 int main(){
 int n;
-int sum = 0;
-cin >> n;
+int s = 0;
+std::cin >> n;
 while (n > 0)
 {
- sum += n % 10;
+ s += n % 10;
  n /= 10;
 }
-cout << sum << endl;
+std::cout << s << std::endl;
 
 return 0;
 }
+
