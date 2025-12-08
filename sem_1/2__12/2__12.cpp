@@ -2,21 +2,22 @@
 using namespace std;
 int main(){
 int n, tmp, max, min;
-cout << "Введите длину последовательности:" << endl;
-cin >> n;
-cout << "Введите первое число:" << endl;
-cin >> tmp;
+std::cout << "Введите длину последовательности:" << std::endl;
+std::cin >> n;
+std::cout << "Введите первое число:" << std::endl;
+std::cin >> tmp;
 max = tmp;
 min = tmp;
 for (int i = 2; i <= n; i++)
 {
- cout << "Введите следующее число:" << endl;
- cin >> tmp;
+ std::cout << "Введите следующее число:" << std::endl;
+ std::cin >> tmp;
  if (tmp > max) { max = tmp; }
  else if (tmp < min) { min = tmp; }
 }
-cout << "Сумма максимального и минимального элементов: " << (max+min) <<
-endl;
+std::cout << "Сумма максимального и минимального элементов: " << (max+min) <<
+std::endl;
 
 return 0;
 }
+
