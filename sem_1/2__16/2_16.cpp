@@ -2,14 +2,15 @@
 using namespace std;
 int main(){
 int n;
-int sum = 0;
-cin >> n;
+int s = 0;
+std::cin >> n;
 for (int i = 1; i <= n; i++)
 {
- if (i % 2 == 0) { sum += i; }
- else { sum -= i; }
+ if (i % 2 == 0) { s += i; }
+ else { s -= i; }
 }
-cout << sum << endl;
+std::cout << sum << std::endl;
 
 return 0;
 }
+
