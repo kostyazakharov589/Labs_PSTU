@@ -1,6 +1,6 @@
 #include <iostream> 
 #include <cmath>
-using namespace std;
+
 int main(){
 
 float a, b, c, d, x1, x2;
@@ -21,5 +21,6 @@ else { std::cout << "Корней нет" << std::endl; }
 
 return 0;
 }
+
 
 
