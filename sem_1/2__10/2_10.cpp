@@ -1,5 +1,5 @@
 #include <iostream> 
-using namespace std;
+
 int main(){
 int n, tmp, max;
 std::cout << "длина последовательности:" << std::endl;
@@ -18,5 +18,6 @@ std::cout << "Макс. эл.: " << max << std:;endl;
 
 return 0;
 }
+
 
 
