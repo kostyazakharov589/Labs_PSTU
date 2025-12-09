@@ -1,5 +1,5 @@
 #include <iostream> 
-using namespace std;
+
 int main(){
 int n, d;
 std::cin >> n;
@@ -82,4 +82,5 @@ std::cout << std::endl;
 
 return 0;
 }
+
 
