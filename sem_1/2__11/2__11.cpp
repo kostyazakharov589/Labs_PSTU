@@ -1,5 +1,5 @@
 #include <iostream> 
-using namespace std;
+
 int main(){
 int n, tmp;
 bool plus1 = false; 
@@ -22,4 +22,5 @@ else { std::cout << "Все элементы были нулевыми"; }
 std::cout << std::endl;
 return 0;
 }
+
 
