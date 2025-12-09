@@ -1,5 +1,5 @@
 #include <iostream> 
-using namespace std;
+
 int main(){
 int n, tmp, max, min;
 std::cout << "Введите длину последовательности:" << std::endl;
@@ -20,4 +20,5 @@ std::endl;
 
 return 0;
 }
+
 
