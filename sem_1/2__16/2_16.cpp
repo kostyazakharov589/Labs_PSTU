@@ -1,5 +1,5 @@
 #include <iostream> 
-using namespace std;
+
 int main(){
 int n;
 int s = 0;
@@ -17,5 +17,6 @@ std::cout << sum << std::endl;
 
 return 0;
 }
+
 
 
