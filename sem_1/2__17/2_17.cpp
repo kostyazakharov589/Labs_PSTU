@@ -1,6 +1,6 @@
 #include <iostream> 
 #include <cmath>
-using namespace std;
+
 int main(){
 int n;
 float x, f, s;
@@ -16,4 +16,5 @@ for (int i = 2; i <= n; i++)
 std::cout << sum << std::endl;
 return 0;
 }
+
 
