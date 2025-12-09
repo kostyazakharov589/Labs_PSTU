@@ -1,12 +1,12 @@
 #include <iostream> 
-using namespace std;
+
 int main(){
 int n, s, k;
 bool flag = false;
 std::cin >> n >> s;
 while (n > 0 && !flag)
 {
- k = n % 10;
+  k = n % 10;
  if (k == s)
  {
  flag = true;
@@ -18,4 +18,5 @@ if (!flag) { std::cout << "Цифра не найдена" << std::endl; }
 
 return 0;
 }
+
 
