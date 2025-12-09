@@ -1,5 +1,5 @@
 #include <iostream> 
-using namespace std;
+
 int main(){
 int n;
 int s = 0;
@@ -13,4 +13,5 @@ std::cout << s << std::endl;
 
 return 0;
 }
+
 
