@@ -2,83 +2,84 @@
 using namespace std;
 int main(){
 int n, d;
-cin >> n;
+std::cin >> n;
 d = n/2;
 
 for (int i = 0; i < d; i++)
 {
-  cout << " ";
+  std::cout << " ";
 }
 for (int i = 0; i < n; i++)
 {
-  cout << "* ";
+  std::cout << "* ";
 }
-cout << endl;
+std::cout << std::endl;
 
 for (int i = 0; i < d-1; i++)
 {
   for (int j = 1; j < d-i; j++)
  {
- cout << " ";
+ std::cout << " ";
  }
- cout << "* ";
+ std::cout << "* ";
   for (int j = 0; j < n-2; j++)
  {
- cout << " ";
+ std::cout << " ";
  }
- cout << "*";
+ std::cout << "*";
   for (int j = 1; j < i; j++)
  {
- cout << " ";
+ std::cout << " ";
  }
- cout << "*" << endl;
+ std::cout << "*" << std::endl;
 }
 
 for (int i = 0; i < n; i++)
 {
- cout << "* ";
+ std::cout << "* ";
 }
 for (int i = 0; i < d-2; i++)
 {
- cout << " ";
+ std::cout << " ";
 }
-cout << "*" << endl;
+std::cout << "*" << std::endl;
 
 for (int i = 0; i < n-d-1; i++)
 {
- cout << "* ";
+ std::cout << "* ";
  for (int j = 0; j < n-2; j++)
  {
- cout << " ";
+ std::cout << " ";
  }
- cout << "* ";
+ std::cout << "* ";
  for (int j = 0; j < d-2; j++)
  {
- cout << " ";
+ std::cout << " ";
  }
- cout << "*" << endl;
+ std::cout << "*" << std::endl;
 }
 
 for (int i = 0; i < d-1; i++)
 {
- cout << "* ";
+ std::cout << "* ";
  for (int j = 0; j < n-2; j++)
  {
- cout << " ";
+ std::cout << " ";
  }
- cout << "*";
+ std::cout << "*";
  for (int j = 1; j < d-i-1; j++)
  {
- cout << " ";
+ std::cout << " ";
  }
- cout << "*" << endl;
+ std::cout << "*" << std::endl;
 }
 
 for (int i = 0; i < n; i++)
 {
- cout << "* ";
+ std::cout << "* ";
 }
-cout << endl;
+std::cout << std::endl;
 
 return 0;
 }
+
