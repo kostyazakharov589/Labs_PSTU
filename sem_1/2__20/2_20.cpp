@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cmath>
 
-
 int main() {
     float n,s,a;
     int i = 1;
