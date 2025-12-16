@@ -1,24 +1,25 @@
 #include <iostream>
 #include <cmath>
-int main() {
-	int n, s = 0;
-	float a, b;
-	
-	std::cin >> n;
-	b = sin(n);
-	std::cout << b << std::endl;
-
-	for (int i = 1; i < n; i++) {
-		a = sinf(n + i / double(n));
-		if (a > b || b > a) { 
-			b = a; 
-			s = 0;
-		}
-		if (abs(a - b) < 0.000001 && abs(a - b) == 0) {
-			s++;
-		}
-	}
-	std::cout << b << "  " << s << std::endl;
-
-	return 0;
+int main(){
+    float n, a, max;
+    int i = 2; 
+    int c = 1;
+    std::cin >> n;
+    max = sin(n + 1/n);
+    while (i <= n)
+    {
+        a = sin(n + i/n);
+        if (a > max)
+        {
+            max = a;
+            c = 1;
+        }
+        else if (a == max) 
+        { 
+        c++; 
+        }
+        i++;
+    }
+    std::cout << "Макс эл: " << max << std::endl;
+    std::cout << "Число эл: " << c << std::endl;
 }
