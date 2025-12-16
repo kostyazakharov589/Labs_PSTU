@@ -1,12 +1,12 @@
 #include <iostream>
 
 int main() {
-	int a = 10;
+	int a = 2;
 	std::cout << a << " ";
 
 	int *u = &a;
 
-	*u = 4209;
+	*u = 6;
 
 	std::cout << a;
 	
