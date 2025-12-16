@@ -1,8 +1,8 @@
 #include <iostream>
 
 int main() {
-	int a = 10;
-	int b = 20;
+	int a = 2;
+	int b = 6;
 	std::cout << "a - " << a << " b - " << b <<  std::endl;
 
 	int *ua = &a;
