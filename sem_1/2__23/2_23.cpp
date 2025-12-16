@@ -22,4 +22,5 @@ int main(){
     }
     std::cout << "Макс эл: " << max << std::endl;
     std::cout << "Число эл: " << c << std::endl;
+return 0;
 }
