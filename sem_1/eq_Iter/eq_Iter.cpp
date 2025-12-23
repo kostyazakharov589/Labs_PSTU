@@ -5,11 +5,11 @@ int main()
 {
     float x, xPrev;
     double eps = 0.000001;
-    double lambda = -0.05; // λ = -1/20 = -0.05
+    double lambda = 0.5;
     float t = 0.1;
 
-    x = 1.18; // можно выбрать любое x0 из [1, 2] — заданного по условию задачи промежутка, a или b берем по желанию
-    xPrev = 0; // делаем заведомо меньше x
+    x = 1.12;
+    xPrev = 0; 
 
     while(abs(x - xPrev) > eps)
      {
@@ -18,8 +18,6 @@ int main()
      }
     std::cout << "Корень по методу итераций: " << x << std::endl;
  return 0;
-}
-
 
 
 
