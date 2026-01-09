@@ -18,7 +18,7 @@ int main()
      }
     std::cout << "Корень по методу итераций: " << x << std::endl;
  return 0;
-
+}
 
 
 
