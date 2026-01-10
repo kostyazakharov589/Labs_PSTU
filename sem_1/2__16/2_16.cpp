@@ -13,7 +13,7 @@ for (int i = 1; i <= n; i++)
   s -= i; 
  }
 }
-std::cout << sum << std::endl;
+std::cout << s << std::endl;
 
 return 0;
 }
