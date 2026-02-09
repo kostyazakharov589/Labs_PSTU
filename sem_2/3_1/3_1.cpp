@@ -11,9 +11,9 @@ int main() {
     }
     cout << endl;
     for (int i = 0; i < n / 2; i++) {
-        te\mp = arr[i];
+        tmp = arr[i];
         arr[i] = arr[n - 1 - i];
-        arr[n - 1 - i] = te\mp;
+        arr[n - 1 - i] = tmp;
     }
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
