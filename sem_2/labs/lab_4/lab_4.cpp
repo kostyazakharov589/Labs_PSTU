@@ -1,3 +1,4 @@
+//Вариант 12 
 #include <iostream>
 #include <cstdlib>  
 #include <ctime>    
