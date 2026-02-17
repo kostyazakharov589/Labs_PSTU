@@ -56,7 +56,7 @@
 |  3  |  3_5   |  🟢   |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/3_5) |
 |  3  |  3_6   |  🟢   |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/3_6) |
 |  3  |  3_7   |  🟢   |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/3_7) |
-|  3  |  3_8   |  🟢   |  🔴  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/3_8) |
+|  3  |  3_8   |  🟢   |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/3_8) |
 |  3  |  3_9   |  🟢   |  🔴  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/3_9) |
 |  3  |  3_10   |  🟢   |  🔴  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/3__10) |
 |  3  |  3_11   |  🟢   |  🔴  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/3__11) |
