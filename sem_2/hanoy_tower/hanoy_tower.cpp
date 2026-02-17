@@ -1,15 +1,15 @@
 #include <iostream>
 using namespace std;
 
-void hanoi(int n, int d1, int to, int k) {
+void hanoi(int n, int start, int to, int k) {
     if (n == 1) {
-        cout << "переместить 1 диск с " << d1 << " на " << to << endl;
+        cout << "переместить 1 диск с " << start << " на " << to << endl;
         return;
     }
 
-    hanoi(n - 1, d1, k, to);
-    cout << "Переметить " << n << " с " << d1 << " на " << to << endl;
-    hanoi(n - 1, k, to, d1);
+    hanoi(n - 1, start, k, to);
+    cout << "Переметить " << n << " с " << start << " на " << to << endl;
+    hanoi(n - 1, k, to, start);
 }
 
 int main() {
