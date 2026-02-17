@@ -48,6 +48,7 @@
 | Задачи   |  НОД  |  🟢   |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/nod) |
 | Задачи   |  Ханой  |  🟢   |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/hanoy_tower) |
 | Задачи   |  фибоначи  |  🟢   |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/fibinachi) |
+| Задачи   |  8 ферзей  |  🔴   |  🔴  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/8_ferz) |
 |  3  |  3_1   |  🟢   |  🔴  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/26aa1d65beeae40dfdf4c5677803c9f1954ad3b9/sem_2/3_1) |
 |  3  |  3_2   |  🟢   |  🔴  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/26aa1d65beeae40dfdf4c5677803c9f1954ad3b9/sem_2/3_2) |
 |  3  |  3_3   |  🟢   |  🔴  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/26aa1d65beeae40dfdf4c5677803c9f1954ad3b9/sem_2/3_3) |
