@@ -42,5 +42,5 @@
 |  Л.Р.  |  4   |  🟢  |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_4) |
 |  Л.Р.  |  5   |  🟢  |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_5) |
 |  Л.Р.  |  6   |  🔴  |  🔴  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_6) |
-|  Л.Р.  |  7   |  🔴  |  🔴  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_7) |
+|  Л.Р.  |  7   |  🟢  | 🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_7) |
 |  Л.Р.  |  10   |  🔴  |  🔴  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_10) |
