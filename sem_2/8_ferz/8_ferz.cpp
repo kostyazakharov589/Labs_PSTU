@@ -1,4 +1,4 @@
-//задача о 8 ферзях с визуализацией
+//задача о 8 ферзях 
 #include <iostream>
 using namespace std;
 
