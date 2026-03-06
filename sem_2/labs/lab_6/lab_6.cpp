@@ -8,13 +8,13 @@ int main()
     setlocale(LC_ALL, "Russian");
     system("chcp 1251");
     system("cls");
-
-    char s[255];
+    const int y = 255;
+    char s[y];
     int start = 0, c;
     char t;
 
     cout << "Введите строку и добавьте точку в конце " << endl;
-    cin.getline(s, 255);
+    getline(s, y);
 
     int l = strlen(s);
     for (int i = 0; i <= l; i++){
