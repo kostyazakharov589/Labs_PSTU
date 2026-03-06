@@ -14,7 +14,7 @@ int main()
     char t;
 
     cout << "Введите строку и добавьте точку в конце " << endl;
-    getline(s, y);
+    cin.getline(s, y);
 
     int l = strlen(s);
     for (int i = 0; i <= l; i++){
