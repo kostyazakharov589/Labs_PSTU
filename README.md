@@ -17,7 +17,7 @@
 | eq_Iter| 🟢 | 🟢 |
 
 ## 2 семестр
-| П/П | Наименование | КОД | Б-С | Ссылка | 
+| П/П | НАЗВАНИЕ | КОД | Б-С | Ссылка | 
 | --- | --- | --- | --- | --- |
 |**Задачи**|  Сортировки  |  🟢   |  🔴  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/sort) |
 | - |  НОД  |  🟢   |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/nod) |
