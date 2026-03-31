@@ -1,0 +1,74 @@
+The Dark Side of the Moon
+Pink Floyd
+2580
+1500
+
+Abbey Road
+The Beatles
+2820
+1200
+
+Nevermind
+Nirvana
+2540
+1100
+
+Back in Black
+AC/DC
+2530
+1350
+
+Rumours
+Fleetwood Mac
+2380
+1400
+
+Hotel California
+Eagles
+2590
+1250
+
+Thriller
+Michael Jackson
+2530
+1600
+
+Led Zeppelin IV
+Led Zeppelin
+2550
+1450
+
+A Night at the Opera
+Queen
+2580
+1550
+
+The Wall
+Pink Floyd
+4860
+2000
+
+Master of Puppets
+Metallica
+3280
+1300
+
+Paranoid
+Black Sabbath
+2560
+1150
+
+Highway to Hell
+AC/DC
+2500
+1250
+
+The Joshua Tree
+U2
+3000
+1450
+
+Brothers in Arms
+Dire Straits
+3300
+1500
