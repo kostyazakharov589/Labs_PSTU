@@ -24,7 +24,7 @@
 | - |  Ханойск  |  🟢   |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/hanoy_tower) |
 | - |  Фибоначчи  |  🟢   |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/fibinachi) |
 | ----- |  8 ферзей  |  🟢   |  🟡  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/8_ferz) |
-|**3**|  Задачи 3  |  🟢  |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/3_zadachi) |
+|**3**|  Задачи 3  |  🟢  |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/3zadachi) |
 |**Л.Р.**|  3   |  🟢  |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_3) |
 | - |  4   |  🟢  |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_4) |
 | - |  5   |  🟢  |  🟢  | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_5) |
