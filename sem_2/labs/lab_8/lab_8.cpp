@@ -21,13 +21,11 @@ struct music {
 music input() {
     music m;
     string br;
-    cout << "название: ";
-    getline(cin, br);
+    cout << "название: "; getline(cin, br);
     int l1 = br.copy(m.naz, 99);
     m.naz[l1] = '\0';
 
-    cout << "автор: "; 
-    getline(cin, br);
+    cout << "автор: "; getline(cin, br);
     int l2 = br.copy(m.aut, 99);
     m.aut[l2] = '\0';
 

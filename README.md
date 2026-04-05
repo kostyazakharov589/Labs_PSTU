@@ -37,14 +37,14 @@
 |    -     |      6      |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_6) |
 |    -     |   7.1 7.2   |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_7) |
 |    -     |      8      |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_8) |
-|    -     |      9      |  🟡   |  🟡   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_9) |
+|    -     |      9      |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_9) |
 |    -     |     10      |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_10) |
 |  -----   | 11(1 2 3 4) |  🔴   |  🔴   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_11) |
 
 | Л.Р.Кл. |  -   |  -   |  -   |                              -                               |
 | :-----: | :--: | :--: | :--: | :----------------------------------------------------------: |
-|    -    |  1   |  🔴   |  🔴   | [Ссылка](https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_class_1) |
-|    -    |  2   |  🔴   |  🔴   | [Ссылка](https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_class_2) |
-|    -    |  3   |  🔴   |  🔴   | [Ссылка](https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_class_3) |
-|    -    |  4   |  🔴   |  🔴   | [Ссылка](https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_class_4) |
+|    -    |  1   |  🔴   |  🔴   | [Ссылка](https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_class/lab_class_1) |
+|    -    |  2   |  🔴   |  🔴   | [Ссылка](https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_class/lab_class_2) |
+|    -    |  3   |  🔴   |  🔴   | [Ссылка](https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_class/lab_class_3) |
+|    -    |  4   |  🔴   |  🔴   | [Ссылка](https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_class/lab_class_4) |
 
