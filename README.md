@@ -20,17 +20,19 @@
 
 ## 								2 семестр
 
-|    П/П     |  Название  | Код  | Б-С  |                            Ссылка                            |
-| :--------: | :--------: | :--: | :--: | :----------------------------------------------------------: |
-| **Задачи** | Сортировки |  🟢   |  🟡   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/sort) |
-|     -      |    НОД     |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/nod) |
-|     -      |  Ханойск   |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/hanoy_tower) |
-|     -      | Фибоначчи  |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/fibinachi) |
-|     -      |  8 ферзей  |  🟢   |  🟡   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/8_ferz) |
-|   -----    |  Задачи 3  |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/3zadachi) |
+|    П/П     |   Название   | Код  | Б-С  |                            Ссылка                            |
+| :--------: | :----------: | :--: | :--: | :----------------------------------------------------------: |
+| **Задачи** | п\вст\в сорт |  🟢   |  🟡   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/sor/fast_sort) |
+|     -      |     НОД      |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/nod) |
+|     -      |   Ханойск    |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/hanoy_tower) |
+|     -      |  Фибоначчи   |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/fibinachi) |
+|     -      |   8 ферзей   |  🟢   |  🟡   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/8_ferz) |
+|   -----    |   Задачи 3   |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/3zadachi) |
 
 | **Л.Р.** |      -      |  -   |  -   |                              -                               |
 | :------: | :---------: | :--: | :--: | :----------------------------------------------------------: |
+|    -     |  сортиров.  |  🔴   |  🔴   | [ссылка](https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/sort) |
+|    -     |   поиски    |  🔴   |  🔴   | [ссылка](https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/search) |
 |    -     |      3      |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_3) |
 |    -     |      4      |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_4) |
 |    -     |      5      |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_5) |
