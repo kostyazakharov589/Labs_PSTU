@@ -1,5 +1,7 @@
 //задача о 8 ферзях 
 #include <iostream>
+#include <windows.h>
+
 using namespace std;
 
 const int s = 8;
@@ -64,7 +66,8 @@ void res(int b) {
 }
 
 int main() {
-    setlocale(LC_ALL, "ru_RU.UTF-8");
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
     cout << "задача о 8 ферзях" << endl << endl;
     res(0);
     cout << "всего попыток " << kolvo << endl;
