@@ -22,7 +22,11 @@
 
 |    П/П     |   Название   | Код  | Б-С  |                            Ссылка                            |
 | :--------: | :----------: | :--: | :--: | :----------------------------------------------------------: |
+<<<<<<< HEAD
 | **Задачи** | п\вст\в сорт |  🟢   |  🟡   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/sort/simple_sort) |
+=======
+| **Задачи** | п\вст\в сорт |  🟢   |  🟡   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/sort/fast_sort) |
+>>>>>>> 5d0ff447ffde7a17a1a29b3cb19169c5edab1d12
 |     -      |     НОД      |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/nod) |
 |     -      |   Ханойск    |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/hanoy_tower) |
 |     -      |  Фибоначчи   |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/fibinachi) |
