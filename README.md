@@ -2,7 +2,7 @@
 
 ## Захаров Константин ИВТ-25-1б
 
-## 								1 семестр
+## 1 семестр
 
 | Номер задачи | Статус | Статус по блок-схеме |
 | :-: | :-: | :-: |
@@ -18,15 +18,11 @@
 | eq_Newton | 🟢 | 🟢 |
 | eq_Iter| 🟢 | 🟢 |
 
-## 								2 семестр
+## 2 семестр
 
 |    П/П     |   Название   | Код  | Б-С  |                            Ссылка                            |
 | :--------: | :----------: | :--: | :--: | :----------------------------------------------------------: |
-<<<<<<< HEAD
 | **Задачи** | п\вст\в сорт |  🟢   |  🟡   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/sort/simple_sort) |
-=======
-| **Задачи** | п\вст\в сорт |  🟢   |  🟡   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/sort/fast_sort) |
->>>>>>> 5d0ff447ffde7a17a1a29b3cb19169c5edab1d12
 |     -      |     НОД      |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/nod) |
 |     -      |   Ханойск    |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/hanoy_tower) |
 |     -      |  Фибоначчи   |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/fibinachi) |
@@ -34,7 +30,7 @@
 |   -----    |   Задачи 3   |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/3zadachi) |
 
 | **Л.Р.** |      -      |  -   |  -   |                              -                               |
-| :------: | :---------: | :--: | :--: | :----------------------------------------------------------: |
+| ------ | --------- | -- | -- | ---------------------------------------------------------- |
 |    -     |  сортиров.  |  🔴   |  🔴   | [ссылка](https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/sort) |
 |    -     |   поиски    |  🔴   |  🔴   | [ссылка](https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/search) |
 |    -     |      3      |  🟢   |  🟢   | [Ссылка]( https://github.com/kostyazakharov589/Labs_PSTU/tree/main/sem_2/labs/lab_3) |
