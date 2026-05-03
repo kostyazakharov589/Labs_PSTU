@@ -1,0 +1,114 @@
+{
+    "endMonthIdx": 0,
+    "endYear": 2026,
+    "make": "Haval",
+    "mileage": 100000,
+    "model": "H9",
+    "startMonthIdx": 0,
+    "startYear": 2022,
+    "timeline": [
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Зима",
+            "year": 2022
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Весна",
+            "year": 2022
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Лето",
+            "year": 2022
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Осень",
+            "year": 2022
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Зима",
+            "year": 2023
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Весна",
+            "year": 2023
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Лето",
+            "year": 2023
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Осень",
+            "year": 2023
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Зима",
+            "year": 2024
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Весна",
+            "year": 2024
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Лето",
+            "year": 2024
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Осень",
+            "year": 2024
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Зима",
+            "year": 2025
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Весна",
+            "year": 2025
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Лето",
+            "year": 2025
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Осень",
+            "year": 2025
+        },
+        {
+            "km": 0,
+            "road_k": "Город",
+            "season": "Зима",
+            "year": 2026
+        }
+    ],
+    "year": 2020
+}
