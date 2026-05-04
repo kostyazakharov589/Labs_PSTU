@@ -19,13 +19,13 @@ osnova::osnova(QWidget *parent)
 {
     ui->setupUi(this);
 
-    if (dbManager.connectToDataBase()) {
+    if (dbManager.connectToDataBase()) {//здесь мы реализуем логику подключения к бд и вывод на второй странице
         qDebug() << "База данных успешно подключена";
 
-        ui->profileSelector->addItems(dbManager.getSavedProfiles());
+        ui->profileSelector->addItems(dbManager.getSavedProfiles());//выводим подключённые жесонные профили 
 
 
-        QStringList makeList = dbManager.getCarMakes(); //подключаем профили и выводим их
+        QStringList makeList = dbManager.getCarMakes(); //подключаем марки и выводим их
         QCompleter *makeCompleter = new QCompleter(makeList, this);//создаём ядро из профилей
         makeCompleter->setCaseSensitivity(Qt::CaseInsensitive);//сделать все буквы однострочными
         ui->makeInput->setCompleter(makeCompleter);//прикручиваем к полю ядро
@@ -41,7 +41,7 @@ osnova::osnova(QWidget *parent)
         ui->btnNext->setEnabled(false);
 
 
-        connect(ui->makeInput, &QLineEdit::textChanged, this, [this, modelCompleter]() { //ищем модель после ввода марки
+        connect(ui->makeInput, &QLineEdit::textChanged, this, [this, modelCompleter]() { //реализация ввода марки с удалением и подключением и прочим 
             ui->modelInput->clear(); // Стираем старую модель
             ui->yearInput->clear();  // Стираем старые года
 
@@ -60,11 +60,11 @@ osnova::osnova(QWidget *parent)
             }
         });
 
-        connect(ui->modelInput, &QLineEdit::textChanged, this, [this]() {
+        connect(ui->modelInput, &QLineEdit::textChanged, this, [this]() {//ищем модель после ввода марки и то же самое, что и в предыдущем с поиском и удалением
             QString currentMake = ui->makeInput->text();//ищем год выпуска после ввода модели
             QString currentModel = ui->modelInput->text();
 
-            const QList<int> years = dbManager.getCarYears(currentMake, currentModel);
+            const QList<int> years = dbManager.getCarYears(currentMake, currentModel);//подключаем список из годов 
             ui->yearInput->clear();
 
 
@@ -101,18 +101,18 @@ osnova::osnova(QWidget *parent)
     });
     //
 
-    //1 страница
+    //2 страница
     connect(ui->btnBackToCar, &QPushButton::clicked, this, [this]() {
-        prepareSeasonsPage();
+        //prepareSeasonsPage(); вроде можно убрать 
         ui->stackedWidget->setCurrentIndex(0);
     });
     connect(ui->btnNext, &QPushButton::clicked, this, [this]() {
-        prepareSeasonsPage();
+        prepareSeasonsPage();//вывод большой функции с сезонами
         ui->stackedWidget->setCurrentIndex(2);
     });
     //
 
-    //2 страница
+    //3 страница
     connect(ui->btnBackToCar2, &QPushButton::clicked, this, [this]() {
         ui->stackedWidget->setCurrentIndex(1);
     });
@@ -131,7 +131,7 @@ osnova::osnova(QWidget *parent)
     });
     //
 
-    //3 страница
+    //4 страница
     connect(ui->btnBackToSeasons, &QPushButton::clicked, this, [this]() {
         ui->stackedWidget->setCurrentIndex(2);
     });
@@ -140,12 +140,12 @@ osnova::osnova(QWidget *parent)
         ui->replaceBox->setVisible(checked);
     });
 
-    connect(ui->radioReplaceSkip, &QRadioButton::clicked, this, [this]() {
+    connect(ui->radioReplaceSkip, &QRadioButton::clicked, this, [this]() {//две одинаковых штуки для сохранения в жесоне при переходе на 5 страницу
         ui->stackedWidget->setCurrentIndex(4);
         QString make = ui->makeInput->text();
         QString model = ui->modelInput->text();
         int year = ui->yearInput->currentText().toInt();
-        int mileage = ui->mileageInput->value();
+        int mileage = ui->mileageInput->value();//превращаем введённое в нормальные типы данных для жесона
 
         saveProfileToJson(make, model, year, mileage);//сохраняем в жесон
 
@@ -154,21 +154,21 @@ osnova::osnova(QWidget *parent)
         ui->profileSelector->addItems(dbManager.getSavedProfiles());//добавляем в список наших профиоей
     });
 
-    connect(ui->btnGoToResults, &QPushButton::clicked, this, [this]() {
+    connect(ui->btnGoToResults, &QPushButton::clicked, this, [this]() {//две одинаковых штуки для сохранения в жесоне при переходе на 5 страницу
         ui->stackedWidget->setCurrentIndex(4);
         QString make = ui->makeInput->text();
         QString model = ui->modelInput->text();
         int year = ui->yearInput->currentText().toInt();
-        int mileage = ui->mileageInput->value();
+        int mileage = ui->mileageInput->value();//превращаем введённое в нормальные типы данных для жесона
 
-        saveProfileToJson(make, model, year, mileage);//сохраняем в жесон
+        saveProfileToJson(make, model, year, mileage);//превращаем введённое в нормальные типы данных для жесона
 
         ui->profileSelector->clear();//динамически обновляем список
         ui->profileSelector->addItems(dbManager.getSavedProfiles());//добавляем в список наших профиоей
     });
     //
 
-    //4 страница
+    //5 страница
     connect(ui->btnBackToHistory, &QPushButton::clicked, this, [this]() {
         ui->stackedWidget->setCurrentIndex(3);
     });
@@ -179,30 +179,30 @@ osnova::osnova(QWidget *parent)
 }
 
 
-void osnova::saveProfileToJson(const QString &make, const QString &model, int year, int mileage)//сохраняем профили в жесон
+void osnova::saveProfileToJson(const QString &make, const QString &model, int year, int mileage)//реализация логичики функции сохранения профиля в жесон
 {
     QJsonObject profileObj;
     profileObj["make"] = make;
     profileObj["model"] = model;
     profileObj["year"] = year;
-    profileObj["mileage"] = mileage;
-    double avgKm = calculateEffectiveMileage();
+    profileObj["mileage"] = mileage//сохраняем базовый профиль
+    double avgKm = calculateEffectiveMileage();//тут идёт отдельный подсчёт среднего пробега в неведённых 
 
     profileObj["startMonthIdx"] = ui->cmbStartMonth->currentIndex();
     profileObj["endMonthIdx"] = ui->cmbEndMonth->currentIndex();
     profileObj["startYear"] = ui->spinStartYear->currentText().toInt();
-    profileObj["endYear"] = ui->spinEndYear->currentText().toInt();
-    //сохраняем всё в жесон сначала базовый профиль, а потом начало и конец использования
+    profileObj["endYear"] = ui->spinEndYear->currentText().toInt();//сохраняем начало и конец использования нашей машины 
+    //это всё сохранём в жесон 
     QJsonArray timelineArray; // Создаем массив для истории
 
-    for (const SeasonEntry &entry : generatedSeasons) {//перебираем для сохранения года
+    for (const SeasonEntry &entry : generatedSeasons) {//т.к. у нас пробег по сезонам генерится от пользователя, то перебираем по колву введённого 
         QJsonObject seasonObj;
         seasonObj["year"] = entry.year;
         seasonObj["season"] = entry.seasonName;
         int val = entry.spinKm->value();
         int finalKm = val;
         if (val == 0) {
-            finalKm = (int)avgKm;//для среднего арифм
+            finalKm = (int)avgKm;//для среднего арифм, пока не доделоано 
         }
         seasonObj["km"] = entry.spinKm->value();
         seasonObj["road_k"] = entry.cmbRoad->currentText(); //собираем сезоны
@@ -213,10 +213,10 @@ void osnova::saveProfileToJson(const QString &make, const QString &model, int ye
     profileObj["timeline"] = timelineArray; //прикрепляем историю к профилю
 
     QJsonDocument doc(profileObj);
-    QDir().mkpath("profiles");
+    QDir().mkpath("profiles");//используется для создания всей цепочки вложенных директорий по указанному пути
 
     QString fileName = QString("%1-%2(%3).json").arg(make, model, QString::number(year));//сохраняем
-    QFile file("profiles/" + fileName);
+    QFile file("profiles/" + fileName);//сам репозиторий, поменять!
 
     if (file.open(QIODevice::WriteOnly)) {//открываем и записываем в жесон
         file.write(doc.toJson());
@@ -242,7 +242,7 @@ void osnova::prepareSeasonsPage() {//подготовка страницы с с
 }
 
 
-QStringList getActiveSeasonsForYear(int currentYear, int startYear, int startMonth, int endYear, int endMonth) {//для сезонов года
+QStringList getActiveSeasonsForYear(int currentYear, int startYear, int startMonth, int endYear, int endMonth) {//для сезонов года большой кулист
     QStringList activeSeasons;//подключаем сезоны
 
 
@@ -253,7 +253,7 @@ QStringList getActiveSeasonsForYear(int currentYear, int startYear, int startMon
         return m >= mStart && m <= mEnd;
     };//проверяем на соотвествие месяцам
 
-    if (hasMonth(1) || hasMonth(2) || hasMonth(12)) activeSeasons << "Зима";//присваиеваем сезоны
+    if (hasMonth(1) || hasMonth(2) || hasMonth(12)) activeSeasons << "Зима";//присваиеваем сезоны в зависимости от номера месяца в списке
     if (hasMonth(3) || hasMonth(4) || hasMonth(5))  activeSeasons << "Весна";
     if (hasMonth(6) || hasMonth(7) || hasMonth(8))  activeSeasons << "Лето";
     if (hasMonth(9) || hasMonth(10) || hasMonth(11)) activeSeasons << "Осень";
@@ -262,9 +262,9 @@ QStringList getActiveSeasonsForYear(int currentYear, int startYear, int startMon
 }
 void osnova::generateTimeline()//генерируем сезоны исходя из введенных дат владения
 {
-    // 1. Очищаем старые виджеты
+
     QLayoutItem *child;
-    while ((child = ui->verticalLayout_2->takeAt(0)) != nullptr) {//чё-то для работы, без него плохо чому-то
+    while ((child = ui->verticalLayout_2->takeAt(0)) != nullptr) {//для очищения виджетов, хз
         if (child->widget())
             delete child->widget();
         delete child;
@@ -285,7 +285,7 @@ void osnova::generateTimeline()//генерируем сезоны исходя 
 
     QStringList roadTypes = {"Город", "Трасса", "Грунтовые", "Бездорожье", "Гараж"};//типы дорог
 
-    for (int y = startYear; y <= endYear; ++y) {//генерация блоков по годам
+    for (int y = startYear; y <= endYear; ++y) {//генерация блоков по годам. начинаем со старта и до конца
 
         QStringList activeSeasons = getActiveSeasonsForYear(y, startYear, startMonth, endYear, endMonth);//получаем список из введённых данных
         if (activeSeasons.isEmpty()) continue;
@@ -296,10 +296,10 @@ void osnova::generateTimeline()//генерируем сезоны исходя 
         for (const QString &seasonName : activeSeasons) {
             QWidget *rowWidget = new QWidget(yearBox);//создаём виджеты для отображения годов
             QHBoxLayout *rowLayout = new QHBoxLayout(rowWidget);
-            rowLayout->setContentsMargins(5, 5, 5, 5);
+            rowLayout->setContentsMargins(5, 5, 5, 5);//задаём отступы 
 
             QLabel *lblSeason = new QLabel(seasonName, rowWidget);//выгрузка сезонов
-            lblSeason->setMinimumWidth(60);
+            lblSeason->setMinimumWidth(60);//минимальная ширина
 
             QSpinBox *spinKm = new QSpinBox(rowWidget);//выгрузка км
             spinKm->setMaximum(500000);//максимальный
@@ -307,7 +307,6 @@ void osnova::generateTimeline()//генерируем сезоны исходя 
 
             QComboBox *cmbRoad = new QComboBox(rowWidget);//создаём комбобокс для ввода дорог
             cmbRoad->addItems(roadTypes);
-
             rowLayout->addWidget(lblSeason);
             rowLayout->addWidget(spinKm);
             rowLayout->addWidget(cmbRoad);
@@ -321,22 +320,20 @@ void osnova::generateTimeline()//генерируем сезоны исходя 
             generatedSeasons.append(entry); // Сохраняем для JSON
         }
 
-        ui->verticalLayout_2->addWidget(yearBox);
+        ui->verticalLayout_2->addWidget(yearBox);//боксы годов
     }
 
-   ui->verticalLayout_2->addStretch();
+   ui->verticalLayout_2->addStretch();//занимает всё пространтсва, для норм отображения можно и менять 
 }
 void osnova::loadProfile(const QString &profileName) {//загружаем профили машин
-    QFile file("profiles/" + profileName + ".json");
-    if (!file.open(QIODevice::ReadOnly)) return;
+    QFile file("profiles/" + profileName + ".json");//берём название профиля из сохранённого типа названий
+    if (!file.open(QIODevice::ReadOnly)) return;//перепроверка 
 
-    QJsonObject obj = QJsonDocument::fromJson(file.readAll()).object();
-    file.close();
+    QJsonObject obj = QJsonDocument::fromJson(file.readAll()).object();//открываем на чтение
+    file.close();//закрываем
 
     ui->makeInput->setText(obj["make"].toString());//заполняем всё на первой странице
-    ui->modelInput->setText(obj["model"].toString());
-
-
+    ui->modelInput->setText(obj["model"].toString());//модель
     ui->yearInput->clear();//добавляем год чтобы ничего не ломалось
     ui->yearInput->addItem(QString::number(obj["year"].toInt()));
     ui->yearInput->setCurrentIndex(0);
@@ -344,15 +341,15 @@ void osnova::loadProfile(const QString &profileName) {//загружаем пр�
 
     prepareSeasonsPage();//списки на странице сезонов
 
-    ui->cmbStartMonth->setCurrentIndex(obj["startMonthIdx"].toInt());//восстанавливаем всё из жесона в сезоны
+    ui->cmbStartMonth->setCurrentIndex(obj["startMonthIdx"].toInt());//восстанавливаем всё из жесона на странице сезонов 
     ui->cmbEndMonth->setCurrentIndex(obj["endMonthIdx"].toInt());
     ui->spinStartYear->setCurrentText(QString::number(obj["startYear"].toInt()));
     ui->spinEndYear->setCurrentText(QString::number(obj["endYear"].toInt()));
 
-    generateTimeline();//всё отрисовываем
+    generateTimeline();//отрисовывем наши сезоны 
 
-    QJsonArray timeline = obj["timeline"].toArray();//вписываем все изменения в поля
-    for (int i = 0; i < timeline.size() && i < generatedSeasons.size(); ++i) {
+    QJsonArray timeline = obj["timeline"].toArray();//извлекаем массив из нашего файла
+    for (int i = 0; i < timeline.size() && i < generatedSeasons.size(); ++i) {//делаем генерация по кол-ву введённого 
         QJsonObject sObj = timeline[i].toObject();
         generatedSeasons[i].spinKm->setValue(sObj["km"].toInt());//км
         generatedSeasons[i].cmbRoad->setCurrentText(sObj["road_k"].toString());//тип дороги
